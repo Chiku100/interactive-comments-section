@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --Moderate_blue: hsl(238, 40%, 52%);
+    --Soft_Red: hsl(358, 79%, 66%);
+    --Light_grayish_blue: hsl(239, 57%, 85%);
+    --Pale_red: hsl(357, 100%, 86%);
+
+    /* ### Neutral */
+
+    --Dark_blue: hsl(212, 24%, 26%);
+    --Grayish_Blue: hsl(211, 10%, 45%);
+    --Light_gray: hsl(223, 19%, 93%);
+    --Very_light_gray: hsl(228, 33%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(210, 12%, 93%);
+    display: flex;
+    place-items: center;
+    place-content: center;
+    flex-direction: column;
+}
+
+main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    /* background-color: white; */
+}
+
+.inputsect {
+    width: 50%;
+}
+
+section {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+
+}
+
+p,
+small {
+    color: var(--Grayish_Blue);
+}
+
+.box span,
+b {
+    color: var(--Moderate_blue);
+}
+
+.outerbox {
+    justify-content: space-between;
+    width: 100%;
+    gap: 6rem;
+}
+
+span {
+    color: var(--Dark_blue);
+    font-weight: 700;
+}
+
+span.delete {
+    color: var(--Soft_Red);
+}
+
+.outerbox,
+.innerbox {
+    display: flex;
+}
+
+.innerbox {
+    gap: 1rem;
+}
+
+.buttons {
+    background-color: hsl(210, 12%, 93%);
+    display: flex;
+    padding: 10px 5px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+button {
+
+    cursor: pointer;
+    margin: 10px 0;
+    border: none;
+    background-color: transparent;
+}
+.container3{
+    border-radius: 10px;
+}
+.maincontent,
+.parentp {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.psuedo{
+    border-radius: 10px;
+}
+section {border-radius: 10px;}
+
+article {width: 100%;
+    border-radius: 10px;
+}
+
+button.send {
+    width: 7rem;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.box {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.psuedo {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 80%;
+    background-color: white;
+    /* color: bisque; */
+}
+
+.parentp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#inputs,
+form {
+    gap: 1rem;
+    width: 90%;
+    display: flex;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+.number {
+    color: blue;
+}
+
+input {
+    outline: none;
+    border: 0.1px solid rgb(192, 192, 192);
+    width: 100%;
+}
+
+.send {
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+}
+
+.box img {
+    width: 12px;
+    height: 12px;
+}
+
+div.2 {
+    color: red;
+}
+
+.modal-overlay {}
+
+/* .open-modal {
+    visibility:visible;
+    z-index: 10;
+} */
+.popup {
+    justify-content: center;
+    position: absolute;
+    /* z-index: 1; */
+    left: 40%;
+    top: 30%;
+    height: 10rem;
+    align-items: center;
+    border-radius: 10px;
+    width: 20%;
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup div {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.popup div button {
+    border-radius: 5px;
+    color: white;
+    height: 2rem;
+    width: 6rem;
+}
+
+.delete:hover,
+.edit:hover {
+    opacity: 0.5;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: hsl(211, 10%, 45%);
+}
+
+.dlt {
+    background-color: hsl(358, 79%, 66%);
+}
+
+p {
+    font-size: 1rem;
+}
+
+button.send:hover {
+    background-color: var(--Light_grayish_blue);
+}
+
+.ola {
+    height: 10rem;
+
+    /* background-color: white; */
+    /* width: 40rem; */
+    /* top: 20%; */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    /* left:50%; */
+}
+
+@media screen and (max-width:800px) {
+    main {
+        width: 100%;
+    }
+
+    .inputsect {
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        background-color: white;
+
+    }
+
+    .buttons {
+        flex-direction: row;
+        height: 1rem;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 5rem;
+    }
+
+    .outerbox {
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-end;
+        /* flex-direction: column; */
+        gap: 2rem;
+    }
+
+    .psuedo {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 95%;
+        background-color: white;
+        /* color: bisque; */
+    }
+
+    .parentp {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .popup {
+
+        left: 10%;
+        top: 10%;
+        height: 10rem;
+        width: 60%;
+
+    }
+
+    /* p{
+        width: 90%;
+    } */
+    .reply {
+        gap: 0.5rem;
+        position: relative;
+        top: 11rem;
+
+    }
+
+}
